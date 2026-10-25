@@ -13,19 +13,17 @@ import hashlib
 import json
 import math
 import sqlite3
-import tempfile
 import zipfile
 from contextlib import closing
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Iterable
 
 import numpy as np
 import pandas as pd
 
 
-ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_CONFIG = ROOT / "config/week2_region.json"
+from tools.paths import ROOT
+DEFAULT_CONFIG = ROOT / "config/patagonia_2012_h1.json"
 DEFAULT_OUTPUT = ROOT / "data/database/fisheries_forecast.sqlite3"
 
 
@@ -301,7 +299,7 @@ def load_config(path: Path) -> dict:
 def read_sample(config: dict) -> pd.DataFrame:
     path = ROOT / config["output_dir"] / "sample.csv"
     if not path.is_file():
-        raise FileNotFoundError(f"样例不存在，请先运行 scripts/build_sample.py: {path}")
+        raise FileNotFoundError(f"样例不存在，请先运行 python -m tools.data.build_sample: {path}")
     frame = pd.read_csv(path)
     required = {
         "month", "cell_id", "cell_ll_lon", "cell_ll_lat", "longitude", "latitude",

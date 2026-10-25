@@ -8,17 +8,15 @@ import argparse
 import hashlib
 import json
 import math
-import os
 import re
 import sqlite3
 from contextlib import closing
 from pathlib import Path
 from urllib.parse import urlencode
 from urllib.request import urlopen
-import runtime  # make workspace imports independent of cwd
 from backend.app.paths import resolve_sample_dir
 
-ROOT = Path(__file__).resolve().parents[1]
+from tools.paths import ROOT
 
 
 def digest(path: Path) -> str:

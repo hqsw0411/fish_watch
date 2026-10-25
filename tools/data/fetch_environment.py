@@ -10,7 +10,7 @@ import json
 from pathlib import Path
 from urllib.request import urlopen
 
-import runtime
+from tools import paths as runtime
 import pandas as pd
 import xarray as xr
 
@@ -100,7 +100,7 @@ def fetch(config: dict, mode: str, refresh: bool = False) -> None:
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--config", type=Path, default=runtime.ROOT / "config/sample_region.json")
+    parser.add_argument("--config", type=Path, default=runtime.ROOT / "config/patagonia_2012_h1.json")
     parser.add_argument("--mode", choices=["public", "toolbox"], default="public")
     parser.add_argument("--refresh", action="store_true")
     args = parser.parse_args()

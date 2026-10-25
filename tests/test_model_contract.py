@@ -40,9 +40,9 @@ def test_training_cli_accepts_official_date_csv(tmp_path):
                    'fishing_hours':i+month,'hours':i+month+2}
                   for month in range(1,4) for i in range(6)]).to_csv(source/'fixture.csv',index=False)
     root=Path(__file__).resolve().parents[1]
-    result=subprocess.run([sys.executable,str(root/'scripts/train_random_forest.py'),'--source','csv',
+    result=subprocess.run([sys.executable,'-m','tools.model.train_random_forest','--source','csv',
                            '--csv_dir',str(source),'--split_mode','none','--n_estimators','4',
-                           '--min_samples_leaf','1','--max_depth','3'],cwd=tmp_path,
+                           '--min_samples_leaf','1','--max_depth','3'],cwd=root,
                           env={**os.environ,'FISHERIES_MODEL_RUNS_DIR':str(tmp_path/'runs'),'PYTHONIOENCODING':'utf-8'},
                           capture_output=True,text=True,encoding='utf-8',timeout=60)
     assert result.returncode==0,result.stderr

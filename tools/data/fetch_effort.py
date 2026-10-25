@@ -3,7 +3,7 @@
 Uses the official record's file sizes and MD5 checksums; preserves verified
 archives and unfinished .zip.download files across failed Slurm jobs.
 
-This is a drop-in replacement for scripts/fetch_effort.py.
+Run from the project root: python -m tools.data.fetch_effort --help.
 """
 from __future__ import annotations
 
@@ -16,7 +16,7 @@ from pathlib import Path
 from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
 
-import runtime
+from tools import paths as runtime
 
 # Range segments are intentionally below 4 MiB to tolerate connections that
 # terminate large HTTP responses. Keeping only one download active also makes
@@ -180,7 +180,7 @@ def fetch(config: dict) -> None:
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--config", type=Path,
-                        default=runtime.ROOT / "config/sample_region.json")
+                        default=runtime.ROOT / "config/patagonia_2012_h1.json")
     args = parser.parse_args()
     config_path = args.config if args.config.is_absolute() else runtime.ROOT / args.config
     fetch(json.loads(config_path.read_text(encoding="utf-8")))

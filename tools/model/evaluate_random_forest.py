@@ -1,19 +1,13 @@
 import argparse
 import json
 import os
-import sys
 
-# 保证从任意目录运行都能 import 到项目根下的 models 包
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-if ROOT not in sys.path:
-    sys.path.insert(0, ROOT)
+from tools.paths import ROOT
 
-import numpy as np
-import pandas as pd
 from joblib import load
 
 from models.features import TARGET, build_feature_list
-from scripts.train_random_forest import load_csvs, load_from_db, metrics
+from tools.model.train_random_forest import load_csvs, load_from_db, metrics
 
 RUNS_DIR = os.environ.get("FISHERIES_MODEL_RUNS_DIR", os.path.join(ROOT, "model-artifacts", "runs"))
 

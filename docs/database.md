@@ -1,11 +1,11 @@
-> 历史来源文档：保留原始说明与数值，未在本次清理中复测。路径与操作步骤请以仓库根 README 和 docs/deployment.md 为准。
+> 数据库设计与原始构建记录。历史样本计数和日期未在本次结构整理中复测；当前操作入口见 README 和 tools/data/build_database.py。
 
 # 数据库实施说明
 
 > 构建日期：2026-10-16<br>
 > 数据库：SQLite 3<br>
 > 文件：data/database/fisheries_forecast.sqlite3<br>
-> 构建脚本：scripts/build_database.py
+> 构建脚本：-m tools.data.build_database
 
 ## 1. 已完成内容
 
@@ -206,7 +206,7 @@ SQLite 的外键约束是连接级开关。所有服务连接数据库时必须�
 
 在项目根目录运行：
 
-    python scripts/build_database.py --config config/week2_region.json --output data/database/fisheries_forecast.sqlite3
+    python -m tools.data.build_database --config config/patagonia_2012_h1.json --output data/database/fisheries_forecast.sqlite3
 
 脚本会：
 

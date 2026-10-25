@@ -1,6 +1,5 @@
 import hashlib
 import json
-from pathlib import Path
 from unittest.mock import patch
 
 import pytest
@@ -60,7 +59,7 @@ def test_index_mismatch_refused_without_rewrite(sample_release):
 
 def test_pointer_is_anchored_and_cannot_escape(tmp_path,monkeypatch):
     (tmp_path/'config').mkdir()
-    (tmp_path/'config/sample_region.json').write_text('{"output_dir":"releases"}')
+    (tmp_path/'config/patagonia_2012_h1.json').write_text('{"output_dir":"releases"}')
     releases=tmp_path/'releases';releases.mkdir()
     release=releases/'v1';release.mkdir();(release/'manifest.json').write_text('{}')
     pointer=releases/'latest.json';pointer.write_text('{"directory":"v1"}')

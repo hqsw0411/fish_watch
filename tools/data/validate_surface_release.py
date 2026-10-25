@@ -9,7 +9,7 @@ import json
 from pathlib import Path
 import sqlite3
 
-ROOT = Path(__file__).resolve().parents[1]
+from tools.paths import ROOT
 CONFIG = ROOT / 'config/east_asia_2012_2024.json'
 FIELDS = ('sst_c', 'chl_mg_m3', 'npp_mg_c_m3_day', 'ssha_m')
 

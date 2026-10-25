@@ -1,6 +1,6 @@
 import tarfile
 import pytest
-from scripts.package_code import REQUIRED,collect_files,package
+from tools.release.package_code import REQUIRED,collect_files,package
 
 
 def fixture_tree(root):

@@ -12,7 +12,7 @@ def anchored_path(value: str, root: Path) -> Path:
 
 
 def resolve_sample_dir(root: Path) -> Path:
-    config_path = anchored_path(os.getenv("FISHERIES_CONFIG", "config/sample_region.json"), root)
+    config_path = anchored_path(os.getenv("FISHERIES_CONFIG", "config/patagonia_2012_h1.json"), root)
     config = json.loads(config_path.read_text(encoding="utf-8"))
     directory = anchored_path(os.getenv("FISHERIES_SAMPLE_DIR", config["output_dir"]), root)
     if (directory / "manifest.json").is_file():

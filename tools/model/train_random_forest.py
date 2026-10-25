@@ -4,12 +4,8 @@ import hashlib
 import json
 import os
 import glob
-import sys
 
-# 保证从任意目录运行都能 import 到项目根下的 models 包
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-if ROOT not in sys.path:
-    sys.path.insert(0, ROOT)
+from tools.paths import ROOT
 
 import numpy as np
 import pandas as pd

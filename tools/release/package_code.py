@@ -8,8 +8,8 @@ import json
 from pathlib import Path
 import tarfile
 
-ROOT = Path(__file__).resolve().parents[1]
-DIRECTORIES = {"backend", "frontend", "config", "scripts", "models", "ops", "deploy",
+from tools.paths import ROOT
+DIRECTORIES = {"backend", "frontend", "config", "tools", "models", "deploy",
                "requirements", "docs", "tests", "data-manifests"}
 TOP_FILES = {"README.md", ".gitignore", ".gitattributes", ".env.example", "pyproject.toml"}
 SUFFIXES = {".py", ".sh", ".sbatch", ".ts", ".tsx", ".js", ".jsx", ".mjs", ".cjs",
@@ -19,7 +19,8 @@ SKIP = {"data", "runs", "model-artifacts", "output", "outputs", "backups", "node
         "__pycache__", ".git", ".venv", ".pytest_cache", ".conda-acs"}
 REQUIRED = {"backend/app/main.py", "backend/app/prediction.py", "frontend/src/main.tsx",
             "frontend/public/land.geojson", "frontend/package.json", "frontend/package-lock.json",
-            "models/features.py", "models/random_forest.py", "docs/data_dictionary.json"}
+            "models/features.py", "models/random_forest.py", "docs/data_dictionary.json",
+            "tools/data/build_regional_dataset.py", "tools/release/package_code.py"}
 
 
 def collect_files(root: Path, include_build: bool = False) -> list[Path]:
@@ -29,7 +30,9 @@ def collect_files(root: Path, include_build: bool = False) -> list[Path]:
         rel = path.relative_to(root)
         if rel.parts[0] not in DIRECTORIES and rel.as_posix() not in TOP_FILES:
             continue
-        if any(part in SKIP for part in rel.parts):
+        if any(part in SKIP - {"data"} for part in rel.parts):
+            continue
+        if "data" in rel.parts and rel.parts[:2] != ("tools", "data"):
             continue
         if "dist" in rel.parts and not (include_build and rel.parts[:2] == ("frontend", "dist")):
             continue

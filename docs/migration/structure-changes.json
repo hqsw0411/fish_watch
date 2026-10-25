@@ -1,0 +1,35 @@
+{
+  "base_commit": "170002e3523f22eb8b5bb94a7ac5260b0539c922",
+  "moved": {
+    "scripts/runtime.py": "tools/paths.py",
+    "scripts/build_database.py": "tools/data/build_database.py",
+    "scripts/build_sample.py": "tools/data/build_sample.py",
+    "scripts/build_regional_dataset.py": "tools/data/build_regional_dataset.py",
+    "scripts/fetch_effort.py": "tools/data/fetch_effort.py",
+    "scripts/fetch_environment.py": "tools/data/fetch_environment.py",
+    "scripts/validate_surface_release.py": "tools/data/validate_surface_release.py",
+    "scripts/train_random_forest.py": "tools/model/train_random_forest.py",
+    "scripts/evaluate_random_forest.py": "tools/model/evaluate_random_forest.py",
+    "scripts/check_deployment.py": "tools/release/check_deployment.py",
+    "scripts/package_code.py": "tools/release/package_code.py",
+    "scripts/server_probe.sh": "deploy/linux/probe.sh",
+    "ops/sync_release.py": "deploy/supervise.py",
+    "docs/legacy/数据库实施说明.md": "docs/database.md",
+    "config/sample_region.json": "config/patagonia_2012_h1.json"
+  },
+  "removed": {
+    "scripts/package_server.py": "Forwarding-only package alias; use tools.release.package_code",
+    "scripts/serve.py": "Forwarding-only uvicorn launcher; use python -m uvicorn",
+    "backend/requirements.txt": "Duplicate aggregate dependency alias; use requirements/*.txt",
+    "deploy/linux/requirements-runtime.txt": "Duplicate runtime dependency alias",
+    "deploy/linux/expand_east_asia.sh": "Overlaps data helper and module CLI; keep acs_surface.sh",
+    "config/week2_region.json": "Semantically identical to sample_region.json; consolidated as patagonia_2012_h1.json",
+    "docs/legacy/当前项目服务器部署指南.md": "Superseded by docs/deployment.md",
+    "docs/legacy/analysis/random-forest.md": "Historical results remain in Git; current workflow documented separately"
+  },
+  "test_consolidation": {
+    "from": "scripts/validate_regional_dataset.py",
+    "to": "tests/test_regional_pipeline.py"
+  },
+  "unused_imports_removed": 9
+}

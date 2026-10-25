@@ -1,6 +1,6 @@
 """Build a versioned multi-year monthly dataset, keeping at most one month in memory.
 
-Example: python scripts/build_regional_dataset.py --config config/east_asia_2012_2024.json
+Example: python -m tools.data.build_regional_dataset --config config/east_asia_2012_2024.json
 Use --plan for a read-only size/source preview. Existing month partitions are
 reused only after checking the config fingerprint and the CSV checksum.
 """
@@ -17,16 +17,14 @@ import shutil
 from pathlib import Path
 import tempfile
 
-import runtime
+from tools import paths as runtime
 import pandas as pd
 import xarray as xr
 
-import sys
-sys.path.insert(0, str(runtime.ROOT))
 
-from build_sample import build, ENVIRONMENT_FIELDS
-from fetch_effort import fetch as fetch_effort
-from fetch_environment import fetch as fetch_environment
+from tools.data.build_sample import build, ENVIRONMENT_FIELDS
+from tools.data.fetch_effort import fetch as fetch_effort
+from tools.data.fetch_environment import fetch as fetch_environment
 from backend.app.store import ensure_database, temperature_scale
 
 

@@ -1,3 +1,0 @@
-# Compatibility entrypoint: runtime, data preparation, and model tools.
--r ../requirements/data.txt
--r ../requirements/model.txt

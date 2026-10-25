@@ -22,7 +22,6 @@ except ModuleNotFoundError as error:
         raise HTTPException(status_code=503, detail="Prediction runtime dependencies are unavailable")
 
 ROOT = Path(__file__).resolve().parents[2]
-CONFIG = ROOT / "config/sample_region.json"
 MAX_REGION_CELLS = 5000
 MAX_SUPPORTED_REGION_CELLS = 40000
 MAX_LEGACY_TEMPERATURE_ROWS = 250000
@@ -49,7 +48,7 @@ def load_manifest() -> dict:
     try:
         return json.loads((directory / "manifest.json").read_text(encoding="utf-8"))
     except (OSError, ValueError, KeyError) as error:
-        raise HTTPException(status_code=503, detail="样例数据未就绪，请运行 scripts/build_sample.py。") from error
+        raise HTTPException(status_code=503, detail="样例数据未就绪，请运行 python -m tools.data.build_sample。") from error
 
 
 def prepare_store():

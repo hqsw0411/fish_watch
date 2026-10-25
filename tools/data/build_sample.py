@@ -7,7 +7,7 @@ import zipfile
 from pathlib import Path
 from datetime import datetime, timezone
 
-import runtime
+from tools import paths as runtime
 import numpy as np
 import pandas as pd
 import xarray as xr
@@ -216,7 +216,7 @@ def build(config: dict, require_complete: bool = False) -> dict:
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--config", type=Path, default=runtime.ROOT / "config/sample_region.json")
+    parser.add_argument("--config", type=Path, default=runtime.ROOT / "config/patagonia_2012_h1.json")
     parser.add_argument("--require-complete-env", action="store_true")
     args = parser.parse_args()
     build(json.loads(args.config.read_text(encoding="utf-8")), args.require_complete_env)

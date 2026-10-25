@@ -18,6 +18,6 @@
 
 ## 运行监督器
 
-`ops/sync_release.py --check --releases <目录> --app <代码根>` 只做发布检查。省略 `--check` 会启动/切换 API 子进程，因此只有在批准的隔离或部署流程中执行。该监督器不会因为克隆仓库自动运行。
+`python deploy/supervise.py --check --releases <目录> --app <代码根>` 只做发布检查。省略 `--check` 会启动/切换 API 子进程，因此只有在批准的隔离或部署流程中执行。该监督器不会因为克隆仓库自动运行。
 
 历史的服务器专用启动脚本保存在本地输入快照中。清理仓库不注册 cron、不调用 sbatch/scancel、不修改已有作业。

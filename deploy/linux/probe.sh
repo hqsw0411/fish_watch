@@ -1,11 +1,13 @@
 #!/usr/bin/env bash
 # Read-only ACS server inventory for the fisheries data deployment.
 # Run from WebShell:
-#   bash server_probe.sh
+#   bash deploy/linux/probe.sh
 set +e
 
 STAMP="$(date -u +%Y%m%dT%H%M%SZ 2>/dev/null || date)"
-REPORT="fisheries_server_probe_${STAMP}.txt"
+REPORT_DIR="${FISHERIES_REPORT_DIR:-output/diagnostics}"
+mkdir -p "$REPORT_DIR" || exit 1
+REPORT="$REPORT_DIR/fisheries_server_probe_${STAMP}.txt"
 exec > >(tee "${REPORT}") 2>&1
 
 echo "=== fisheries server probe ==="

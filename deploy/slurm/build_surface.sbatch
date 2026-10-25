@@ -23,7 +23,7 @@ case "${1:-}" in
   full) config='config/east_asia_2012_2024.json' ;;
   *) echo 'Usage: sbatch deploy/slurm/build_surface.sbatch {pilot|full}' >&2; exit 2 ;;
 esac
-"$fisheries_python" scripts/build_regional_dataset.py --config "$config" --mode toolbox
+"$fisheries_python" -m tools.data.build_regional_dataset --config "$config" --mode toolbox
 if [[ "${1}" == full ]]; then
-  "$fisheries_python" scripts/validate_surface_release.py
+  "$fisheries_python" -m tools.data.validate_surface_release
 fi
