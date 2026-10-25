@@ -1,0 +1,9 @@
+-r runtime.txt
+# Original model dependency ranges. Reuse the training environment when loading
+# an existing serialized model; compatibility with that artifact is not verified.
+pandas==3.0.6
+numpy==2.5.3
+scikit-learn>=1.3,<2
+scipy>=1.10,<2
+joblib>=1.3,<2
+sqlalchemy>=2.0,<3

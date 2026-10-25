@@ -1,0 +1,503 @@
+{
+  "observed_date": "2026-10-25",
+  "scope": "Deployment data files excluding monthly partition duplicates. Only stat metadata was read.",
+  "coverage_claim": "2012-2024 is a path/configuration label; temporal completeness is not yet verified.",
+  "assets": [
+    {
+      "path_relative_to_data_project": "data/source/fleet-monthly-csvs-10-v3-2016.zip",
+      "bytes": 66881980,
+      "observed_mtime_ns": 1792499668000000000,
+      "sha256": null,
+      "storage_uri": null,
+      "validation_status": "metadata_only_not_content_verified"
+    },
+    {
+      "path_relative_to_data_project": "data/source/fleet-monthly-csvs-10-v3-2013.zip",
+      "bytes": 33267898,
+      "observed_mtime_ns": 1792503663000000000,
+      "sha256": null,
+      "storage_uri": null,
+      "validation_status": "metadata_only_not_content_verified"
+    },
+    {
+      "path_relative_to_data_project": "data/source/fleet-monthly-csvs-10-v3-2014.zip",
+      "bytes": 38460107,
+      "observed_mtime_ns": 1792499574000000000,
+      "sha256": null,
+      "storage_uri": null,
+      "validation_status": "metadata_only_not_content_verified"
+    },
+    {
+      "path_relative_to_data_project": "data/source/fleet-monthly-csvs-10-v3-2017.zip",
+      "bytes": 85581110,
+      "observed_mtime_ns": 1792499737000000000,
+      "sha256": null,
+      "storage_uri": null,
+      "validation_status": "metadata_only_not_content_verified"
+    },
+    {
+      "path_relative_to_data_project": "data/source/fleet-monthly-csvs-10-v3-2023.zip",
+      "bytes": 138966163,
+      "observed_mtime_ns": 1792509665000000000,
+      "sha256": null,
+      "storage_uri": null,
+      "validation_status": "metadata_only_not_content_verified"
+    },
+    {
+      "path_relative_to_data_project": "data/source/fleet-monthly-csvs-10-v3-2012.zip",
+      "bytes": 18954378,
+      "observed_mtime_ns": 1789955885000000000,
+      "sha256": null,
+      "storage_uri": null,
+      "validation_status": "metadata_only_not_content_verified"
+    },
+    {
+      "path_relative_to_data_project": "data/source/fleet-monthly-csvs-10-v3-2018.zip",
+      "bytes": 102723246,
+      "observed_mtime_ns": 1792499983000000000,
+      "sha256": null,
+      "storage_uri": null,
+      "validation_status": "metadata_only_not_content_verified"
+    },
+    {
+      "path_relative_to_data_project": "data/source/fleet-monthly-csvs-10-v3-2015.zip",
+      "bytes": 49389788,
+      "observed_mtime_ns": 1792504348000000000,
+      "sha256": null,
+      "storage_uri": null,
+      "validation_status": "metadata_only_not_content_verified"
+    },
+    {
+      "path_relative_to_data_project": "data/source/fleet-monthly-csvs-10-v3-2021.zip",
+      "bytes": 119371566,
+      "observed_mtime_ns": 1792507173000000000,
+      "sha256": null,
+      "storage_uri": null,
+      "validation_status": "metadata_only_not_content_verified"
+    },
+    {
+      "path_relative_to_data_project": "data/source/fleet-monthly-csvs-10-v3-2019.zip",
+      "bytes": 107359675,
+      "observed_mtime_ns": 1792505264000000000,
+      "sha256": null,
+      "storage_uri": null,
+      "validation_status": "metadata_only_not_content_verified"
+    },
+    {
+      "path_relative_to_data_project": "data/source/fleet-monthly-csvs-10-v3-2020.zip",
+      "bytes": 115885742,
+      "observed_mtime_ns": 1792506418000000000,
+      "sha256": null,
+      "storage_uri": null,
+      "validation_status": "metadata_only_not_content_verified"
+    },
+    {
+      "path_relative_to_data_project": "data/source/fleet-monthly-csvs-10-v3-2024.zip",
+      "bytes": 131678917,
+      "observed_mtime_ns": 1792510835000000000,
+      "sha256": null,
+      "storage_uri": null,
+      "validation_status": "metadata_only_not_content_verified"
+    },
+    {
+      "path_relative_to_data_project": "data/source/fleet-monthly-csvs-10-v3-2022.zip",
+      "bytes": 127746383,
+      "observed_mtime_ns": 1792508393000000000,
+      "sha256": null,
+      "storage_uri": null,
+      "validation_status": "metadata_only_not_content_verified"
+    },
+    {
+      "path_relative_to_data_project": "data/database/fisheries_forecast.sqlite3",
+      "bytes": 85098496,
+      "observed_mtime_ns": 1792115291000000000,
+      "sha256": null,
+      "storage_uri": null,
+      "validation_status": "metadata_only_not_content_verified"
+    },
+    {
+      "path_relative_to_data_project": "data/samples/patagonia_6blocks_2012_h1/sample.csv",
+      "bytes": 2689936,
+      "observed_mtime_ns": 1791697122000000000,
+      "sha256": null,
+      "storage_uri": null,
+      "validation_status": "metadata_only_not_content_verified"
+    },
+    {
+      "path_relative_to_data_project": "data/samples/patagonia_6blocks_2012_h1/sample.sqlite3",
+      "bytes": 3473408,
+      "observed_mtime_ns": 1792487046000000000,
+      "sha256": null,
+      "storage_uri": null,
+      "validation_status": "metadata_only_not_content_verified"
+    },
+    {
+      "path_relative_to_data_project": "data/samples/east_asia_2012_pilot/release-cbaca58d3d8ffa23/sample.csv",
+      "bytes": 77521475,
+      "observed_mtime_ns": 1792487440000000000,
+      "sha256": null,
+      "storage_uri": null,
+      "validation_status": "metadata_only_not_content_verified"
+    },
+    {
+      "path_relative_to_data_project": "data/samples/east_asia_2012_pilot/release-cbaca58d3d8ffa23/sample.sqlite3",
+      "bytes": 106881024,
+      "observed_mtime_ns": 1792487446000000000,
+      "sha256": null,
+      "storage_uri": null,
+      "validation_status": "metadata_only_not_content_verified"
+    },
+    {
+      "path_relative_to_data_project": "data/samples/east_asia_2012_2024/release-86aded7facafc056/sample.csv",
+      "bytes": 1106693194,
+      "observed_mtime_ns": 1792511970000000000,
+      "sha256": null,
+      "storage_uri": null,
+      "validation_status": "metadata_only_not_content_verified"
+    },
+    {
+      "path_relative_to_data_project": "data/samples/east_asia_2012_2024/release-86aded7facafc056/sample.sqlite3",
+      "bytes": 1489240064,
+      "observed_mtime_ns": 1792512059000000000,
+      "sha256": null,
+      "storage_uri": null,
+      "validation_status": "metadata_only_not_content_verified"
+    },
+    {
+      "path_relative_to_data_project": "data/raw/week2/ssha_2012_h1.nc",
+      "bytes": 77770,
+      "observed_mtime_ns": 1791696760000000000,
+      "sha256": null,
+      "storage_uri": null,
+      "validation_status": "metadata_only_not_content_verified"
+    },
+    {
+      "path_relative_to_data_project": "data/raw/week2/physics_2012_h1.nc",
+      "bytes": 152818,
+      "observed_mtime_ns": 1791696652000000000,
+      "sha256": null,
+      "storage_uri": null,
+      "validation_status": "metadata_only_not_content_verified"
+    },
+    {
+      "path_relative_to_data_project": "data/raw/week2/bgc_2012_h1.nc",
+      "bytes": 56896,
+      "observed_mtime_ns": 1791696729000000000,
+      "sha256": null,
+      "storage_uri": null,
+      "validation_status": "metadata_only_not_content_verified"
+    },
+    {
+      "path_relative_to_data_project": "data/raw/east_asia/2013/bgc.nc",
+      "bytes": 721691,
+      "observed_mtime_ns": 1792510898000000000,
+      "sha256": null,
+      "storage_uri": null,
+      "validation_status": "metadata_only_not_content_verified"
+    },
+    {
+      "path_relative_to_data_project": "data/raw/east_asia/2013/physics.nc",
+      "bytes": 3102509,
+      "observed_mtime_ns": 1792510884000000000,
+      "sha256": null,
+      "storage_uri": null,
+      "validation_status": "metadata_only_not_content_verified"
+    },
+    {
+      "path_relative_to_data_project": "data/raw/east_asia/2013/ssha.nc",
+      "bytes": 1380810,
+      "observed_mtime_ns": 1792510917000000000,
+      "sha256": null,
+      "storage_uri": null,
+      "validation_status": "metadata_only_not_content_verified"
+    },
+    {
+      "path_relative_to_data_project": "data/raw/east_asia/2016/bgc.nc",
+      "bytes": 721691,
+      "observed_mtime_ns": 1792511125000000000,
+      "sha256": null,
+      "storage_uri": null,
+      "validation_status": "metadata_only_not_content_verified"
+    },
+    {
+      "path_relative_to_data_project": "data/raw/east_asia/2016/ssha.nc",
+      "bytes": 1380810,
+      "observed_mtime_ns": 1792511143000000000,
+      "sha256": null,
+      "storage_uri": null,
+      "validation_status": "metadata_only_not_content_verified"
+    },
+    {
+      "path_relative_to_data_project": "data/raw/east_asia/2016/physics.nc",
+      "bytes": 3102509,
+      "observed_mtime_ns": 1792511106000000000,
+      "sha256": null,
+      "storage_uri": null,
+      "validation_status": "metadata_only_not_content_verified"
+    },
+    {
+      "path_relative_to_data_project": "data/raw/east_asia/2017/physics.nc",
+      "bytes": 3102509,
+      "observed_mtime_ns": 1792511196000000000,
+      "sha256": null,
+      "storage_uri": null,
+      "validation_status": "metadata_only_not_content_verified"
+    },
+    {
+      "path_relative_to_data_project": "data/raw/east_asia/2017/bgc.nc",
+      "bytes": 721691,
+      "observed_mtime_ns": 1792511210000000000,
+      "sha256": null,
+      "storage_uri": null,
+      "validation_status": "metadata_only_not_content_verified"
+    },
+    {
+      "path_relative_to_data_project": "data/raw/east_asia/2017/ssha.nc",
+      "bytes": 1380810,
+      "observed_mtime_ns": 1792511229000000000,
+      "sha256": null,
+      "storage_uri": null,
+      "validation_status": "metadata_only_not_content_verified"
+    },
+    {
+      "path_relative_to_data_project": "data/raw/east_asia/2019/bgc.nc",
+      "bytes": 721691,
+      "observed_mtime_ns": 1792511383000000000,
+      "sha256": null,
+      "storage_uri": null,
+      "validation_status": "metadata_only_not_content_verified"
+    },
+    {
+      "path_relative_to_data_project": "data/raw/east_asia/2019/physics.nc",
+      "bytes": 3102509,
+      "observed_mtime_ns": 1792511369000000000,
+      "sha256": null,
+      "storage_uri": null,
+      "validation_status": "metadata_only_not_content_verified"
+    },
+    {
+      "path_relative_to_data_project": "data/raw/east_asia/2019/ssha.nc",
+      "bytes": 1380810,
+      "observed_mtime_ns": 1792511401000000000,
+      "sha256": null,
+      "storage_uri": null,
+      "validation_status": "metadata_only_not_content_verified"
+    },
+    {
+      "path_relative_to_data_project": "data/raw/east_asia/2021/bgc.nc",
+      "bytes": 721691,
+      "observed_mtime_ns": 1792511575000000000,
+      "sha256": null,
+      "storage_uri": null,
+      "validation_status": "metadata_only_not_content_verified"
+    },
+    {
+      "path_relative_to_data_project": "data/raw/east_asia/2021/ssha.nc",
+      "bytes": 1380810,
+      "observed_mtime_ns": 1792511593000000000,
+      "sha256": null,
+      "storage_uri": null,
+      "validation_status": "metadata_only_not_content_verified"
+    },
+    {
+      "path_relative_to_data_project": "data/raw/east_asia/2021/physics.nc",
+      "bytes": 3102509,
+      "observed_mtime_ns": 1792511561000000000,
+      "sha256": null,
+      "storage_uri": null,
+      "validation_status": "metadata_only_not_content_verified"
+    },
+    {
+      "path_relative_to_data_project": "data/raw/east_asia/2023/physics.nc",
+      "bytes": 3102509,
+      "observed_mtime_ns": 1792511770000000000,
+      "sha256": null,
+      "storage_uri": null,
+      "validation_status": "metadata_only_not_content_verified"
+    },
+    {
+      "path_relative_to_data_project": "data/raw/east_asia/2023/bgc.nc",
+      "bytes": 721691,
+      "observed_mtime_ns": 1792511783000000000,
+      "sha256": null,
+      "storage_uri": null,
+      "validation_status": "metadata_only_not_content_verified"
+    },
+    {
+      "path_relative_to_data_project": "data/raw/east_asia/2023/ssha.nc",
+      "bytes": 1380810,
+      "observed_mtime_ns": 1792511797000000000,
+      "sha256": null,
+      "storage_uri": null,
+      "validation_status": "metadata_only_not_content_verified"
+    },
+    {
+      "path_relative_to_data_project": "data/raw/east_asia/2012/ssha.nc",
+      "bytes": 1380810,
+      "observed_mtime_ns": 1792487424000000000,
+      "sha256": null,
+      "storage_uri": null,
+      "validation_status": "metadata_only_not_content_verified"
+    },
+    {
+      "path_relative_to_data_project": "data/raw/east_asia/2012/bgc.nc",
+      "bytes": 721691,
+      "observed_mtime_ns": 1792487413000000000,
+      "sha256": null,
+      "storage_uri": null,
+      "validation_status": "metadata_only_not_content_verified"
+    },
+    {
+      "path_relative_to_data_project": "data/raw/east_asia/2012/physics.nc",
+      "bytes": 3102509,
+      "observed_mtime_ns": 1792487402000000000,
+      "sha256": null,
+      "storage_uri": null,
+      "validation_status": "metadata_only_not_content_verified"
+    },
+    {
+      "path_relative_to_data_project": "data/raw/east_asia/2014/physics.nc",
+      "bytes": 3102509,
+      "observed_mtime_ns": 1792510958000000000,
+      "sha256": null,
+      "storage_uri": null,
+      "validation_status": "metadata_only_not_content_verified"
+    },
+    {
+      "path_relative_to_data_project": "data/raw/east_asia/2014/bgc.nc",
+      "bytes": 721691,
+      "observed_mtime_ns": 1792510972000000000,
+      "sha256": null,
+      "storage_uri": null,
+      "validation_status": "metadata_only_not_content_verified"
+    },
+    {
+      "path_relative_to_data_project": "data/raw/east_asia/2014/ssha.nc",
+      "bytes": 1380810,
+      "observed_mtime_ns": 1792510985000000000,
+      "sha256": null,
+      "storage_uri": null,
+      "validation_status": "metadata_only_not_content_verified"
+    },
+    {
+      "path_relative_to_data_project": "data/raw/east_asia/2015/bgc.nc",
+      "bytes": 721691,
+      "observed_mtime_ns": 1792511047000000000,
+      "sha256": null,
+      "storage_uri": null,
+      "validation_status": "metadata_only_not_content_verified"
+    },
+    {
+      "path_relative_to_data_project": "data/raw/east_asia/2015/physics.nc",
+      "bytes": 3102509,
+      "observed_mtime_ns": 1792511033000000000,
+      "sha256": null,
+      "storage_uri": null,
+      "validation_status": "metadata_only_not_content_verified"
+    },
+    {
+      "path_relative_to_data_project": "data/raw/east_asia/2015/ssha.nc",
+      "bytes": 1380810,
+      "observed_mtime_ns": 1792511062000000000,
+      "sha256": null,
+      "storage_uri": null,
+      "validation_status": "metadata_only_not_content_verified"
+    },
+    {
+      "path_relative_to_data_project": "data/raw/east_asia/2018/physics.nc",
+      "bytes": 3102509,
+      "observed_mtime_ns": 1792511283000000000,
+      "sha256": null,
+      "storage_uri": null,
+      "validation_status": "metadata_only_not_content_verified"
+    },
+    {
+      "path_relative_to_data_project": "data/raw/east_asia/2018/bgc.nc",
+      "bytes": 721691,
+      "observed_mtime_ns": 1792511297000000000,
+      "sha256": null,
+      "storage_uri": null,
+      "validation_status": "metadata_only_not_content_verified"
+    },
+    {
+      "path_relative_to_data_project": "data/raw/east_asia/2018/ssha.nc",
+      "bytes": 1380810,
+      "observed_mtime_ns": 1792511311000000000,
+      "sha256": null,
+      "storage_uri": null,
+      "validation_status": "metadata_only_not_content_verified"
+    },
+    {
+      "path_relative_to_data_project": "data/raw/east_asia/2020/physics.nc",
+      "bytes": 3102509,
+      "observed_mtime_ns": 1792511467000000000,
+      "sha256": null,
+      "storage_uri": null,
+      "validation_status": "metadata_only_not_content_verified"
+    },
+    {
+      "path_relative_to_data_project": "data/raw/east_asia/2020/ssha.nc",
+      "bytes": 1380810,
+      "observed_mtime_ns": 1792511499000000000,
+      "sha256": null,
+      "storage_uri": null,
+      "validation_status": "metadata_only_not_content_verified"
+    },
+    {
+      "path_relative_to_data_project": "data/raw/east_asia/2020/bgc.nc",
+      "bytes": 721691,
+      "observed_mtime_ns": 1792511480000000000,
+      "sha256": null,
+      "storage_uri": null,
+      "validation_status": "metadata_only_not_content_verified"
+    },
+    {
+      "path_relative_to_data_project": "data/raw/east_asia/2022/ssha.nc",
+      "bytes": 1380810,
+      "observed_mtime_ns": 1792511693000000000,
+      "sha256": null,
+      "storage_uri": null,
+      "validation_status": "metadata_only_not_content_verified"
+    },
+    {
+      "path_relative_to_data_project": "data/raw/east_asia/2022/bgc.nc",
+      "bytes": 721691,
+      "observed_mtime_ns": 1792511680000000000,
+      "sha256": null,
+      "storage_uri": null,
+      "validation_status": "metadata_only_not_content_verified"
+    },
+    {
+      "path_relative_to_data_project": "data/raw/east_asia/2022/physics.nc",
+      "bytes": 3102509,
+      "observed_mtime_ns": 1792511660000000000,
+      "sha256": null,
+      "storage_uri": null,
+      "validation_status": "metadata_only_not_content_verified"
+    },
+    {
+      "path_relative_to_data_project": "data/raw/east_asia/2024/ssha.nc",
+      "bytes": 1380810,
+      "observed_mtime_ns": 1792511903000000000,
+      "sha256": null,
+      "storage_uri": null,
+      "validation_status": "metadata_only_not_content_verified"
+    },
+    {
+      "path_relative_to_data_project": "data/raw/east_asia/2024/physics.nc",
+      "bytes": 3102509,
+      "observed_mtime_ns": 1792511876000000000,
+      "sha256": null,
+      "storage_uri": null,
+      "validation_status": "metadata_only_not_content_verified"
+    },
+    {
+      "path_relative_to_data_project": "data/raw/east_asia/2024/bgc.nc",
+      "bytes": 721691,
+      "observed_mtime_ns": 1792511890000000000,
+      "sha256": null,
+      "storage_uri": null,
+      "validation_status": "metadata_only_not_content_verified"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+[
+  {"field":"month","type":"string","unit":"YYYY-MM","nullable":false,"meaning":"观测日历月，统一时间键；不表示当天或预报日期","source":"GFW date / 环境 time"},
+  {"field":"cell_id","type":"string","unit":"无","nullable":false,"meaning":"左下角经纬度构成的稳定网格键；与month共同唯一","source":"统一网格生成"},
+  {"field":"cell_ll_lon","type":"number","unit":"度，东经为正","nullable":false,"meaning":"0.1°网格左下角经度，WGS84","source":"GFW网格定义"},
+  {"field":"cell_ll_lat","type":"number","unit":"度，北纬为正","nullable":false,"meaning":"0.1°网格左下角纬度，WGS84","source":"GFW网格定义"},
+  {"field":"longitude","type":"number","unit":"度，东经为正","nullable":false,"meaning":"网格中心经度；左下角加0.05°","source":"统一网格计算"},
+  {"field":"latitude","type":"number","unit":"度，北纬为正","nullable":false,"meaning":"网格中心纬度；左下角加0.05°","source":"统一网格计算"},
+  {"field":"hours","type":"number","unit":"聚合船舶小时/月","nullable":true,"meaning":"AIS船舶存在时长；按船旗与渔具明细加总；不能当作捕捞时长","source":"GFW hours"},
+  {"field":"fishing_hours","type":"number","unit":"聚合船舶小时/月","nullable":true,"meaning":"GFW模型推断的表观捕捞时长，跨船旗/渔具加总；不是渔获量","source":"GFW fishing_hours"},
+  {"field":"source_row_count","type":"integer","unit":"条","nullable":false,"meaning":"该网格月对应的原始舰队记录数；0表示没有源记录","source":"原始记录计数"},
+  {"field":"gear_types","type":"string","unit":"分号分隔类别","nullable":true,"meaning":"该网格月原始记录出现的渔具类别，去重排序；不是船舶数量","source":"GFW geartype"},
+  {"field":"effort_status","type":"string","unit":"枚举","nullable":false,"meaning":"observed=有记录且捕捞时长>0；reported_zero=源记录明确为0；no_record=无记录且时长为空","source":"质量标记"},
+  {"field":"energy_kwh","type":"number","unit":"kWh/月","nullable":true,"meaning":"预留能耗字段；当前官方舰队月度数据不含能耗、逐船功率或燃油，全部为空；禁止用时长任意换算","source":"待补充可追溯能耗数据"},
+  {"field":"energy_status","type":"string","unit":"枚举","nullable":false,"meaning":"当前为not_available；后续接入能耗须同时明确measured或estimated与计算依据","source":"质量标记"},
+  {"field":"sst_c","type":"number","unit":"°C","nullable":true,"meaning":"GLORYS最浅模型层月均势温thetao，作为表层海温代理；不是独立卫星皮肤SST","source":"CMEMS thetao"},
+  {"field":"chl_mg_m3","type":"number","unit":"mg/m³","nullable":true,"meaning":"表层模型叶绿素a质量浓度月均值","source":"CMEMS chl"},
+  {"field":"npp_mg_c_m3_day","type":"number","unit":"mg C/m³/day","nullable":true,"meaning":"表层浮游植物体积净初级生产率的月均值；不是水柱积分mg C/m²/day","source":"CMEMS nppv"},
+  {"field":"ssh_m","type":"number","unit":"m","nullable":true,"meaning":"GLORYS海面相对大地水准面的高度；不是海面高度异常","source":"CMEMS zos"},
+  {"field":"ssha_m","type":"number","unit":"m","nullable":true,"meaning":"DUACS多星高度计月均海面高度距平，相对于1993—2012参考期；不是zos也不是本样本六个月均值距平","source":"CMEMS sla"},
+  {"field":"environment_status","type":"string","unit":"枚举","nullable":false,"meaning":"available=已配置环境字段均有效；partial_or_missing=至少一项缺失","source":"质量标记"}
+]

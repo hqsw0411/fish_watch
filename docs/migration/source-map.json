@@ -1,0 +1,252 @@
+{
+  "archive_sha256": "19d3a209952cdd28c98d8de674c16372bb20b5414c3f93f48f318d391c0c8f13",
+  "note": "Original source hashes before cleanup, not hashes of edited files. Source paths are relative to the reviewed project archive. No source files were changed on the server.",
+  "selected_files": {
+    "backend/requirements.txt": {
+      "source_role": "runtime",
+      "source_path": "vue-server-v1/fisheries-server/backend/requirements.txt",
+      "source_sha256": "0c02218b6f1bb7cbf19be45b85b455b64a2ac38aa2f48724997614681f86f649"
+    },
+    "backend/__init__.py": {
+      "source_role": "runtime",
+      "source_path": "vue-server-v1/fisheries-server/backend/__init__.py",
+      "source_sha256": "1ec34b7f1c0e302f281d43799b3dad75ef8d5cb3aab1554cd26d065728f7a583"
+    },
+    "config/sample_region.json": {
+      "source_role": "runtime",
+      "source_path": "vue-server-v1/fisheries-server/config/sample_region.json",
+      "source_sha256": "eb9d5f1df01eb8cdc40428c4f22e562904bc0a4a9c3e0868f5cd7f5bc48b5f75"
+    },
+    "config/week2_region.json": {
+      "source_role": "runtime",
+      "source_path": "vue-server-v1/fisheries-server/config/week2_region.json",
+      "source_sha256": "eb9d5f1df01eb8cdc40428c4f22e562904bc0a4a9c3e0868f5cd7f5bc48b5f75"
+    },
+    "docs/data_dictionary.json": {
+      "source_role": "runtime",
+      "source_path": "vue-server-v1/fisheries-server/docs/data_dictionary.json",
+      "source_sha256": "dcc9a53c6ad8122da7e845bc023d4f6dc79aa80143c89fe7bf740afd123940d6"
+    },
+    "docs/legacy/当前项目服务器部署指南.md": {
+      "source_role": "runtime",
+      "source_path": "vue-server-v1/fisheries-server/docs/当前项目服务器部署指南.md",
+      "source_sha256": "5207db5d2852a6f0d5fd58dc1ecb85c6a1d673155ceb9aaf7cfe7bd4ef3ed250"
+    },
+    "docs/legacy/数据库实施说明.md": {
+      "source_role": "runtime",
+      "source_path": "vue-server-v1/fisheries-server/docs/数据库实施说明.md",
+      "source_sha256": "80e2152e52645a35daa1d88ddbfa48f22f26c147a26db3887da2b5cba913f3f0"
+    },
+    "frontend/index.html": {
+      "source_role": "runtime",
+      "source_path": "vue-server-v1/fisheries-server/frontend/index.html",
+      "source_sha256": "0566374b87284bd9413560c481dd63d3417b36d2539648313f6b8799f48a777f"
+    },
+    "frontend/package-lock.json": {
+      "source_role": "runtime",
+      "source_path": "vue-server-v1/fisheries-server/frontend/package-lock.json",
+      "source_sha256": "84c1d59bfc0c06249d232bf1bc5dba9948a3c41457020226242ebfca035409e3"
+    },
+    "frontend/package.json": {
+      "source_role": "runtime",
+      "source_path": "vue-server-v1/fisheries-server/frontend/package.json",
+      "source_sha256": "b6aa2aa49b4c93aa714b40e8c83c840154e359c12bb87f455d2bb7bf831b4254"
+    },
+    "frontend/tsconfig.json": {
+      "source_role": "runtime",
+      "source_path": "vue-server-v1/fisheries-server/frontend/tsconfig.json",
+      "source_sha256": "6f5ee5f27008c7c5e550a933ef5c326eae3f36803b83845085e327e4b44ffb21"
+    },
+    "frontend/vite.config.ts": {
+      "source_role": "runtime",
+      "source_path": "vue-server-v1/fisheries-server/frontend/vite.config.ts",
+      "source_sha256": "078f1ad73538f51218d4b3ea53b8e78dfe4360735e54e79007c1ef26b4f903b4"
+    },
+    "scripts/build_database.py": {
+      "source_role": "runtime",
+      "source_path": "vue-server-v1/fisheries-server/scripts/build_database.py",
+      "source_sha256": "067795de46794486a3961c10cc1d308d36eec1763b813930d0565aad21c68d18"
+    },
+    "scripts/build_sample.py": {
+      "source_role": "data-pipeline",
+      "source_path": "deploy/fisheries-east-asia-surface-new/fisheries-server/scripts/build_sample.py",
+      "source_sha256": "6fcc1377bf279a912558573dfb1070cea888a9a56376073af9e530495ec2d7e1"
+    },
+    "scripts/check_deployment.py": {
+      "source_role": "data-pipeline",
+      "source_path": "deploy/fisheries-east-asia-surface-new/fisheries-server/scripts/check_deployment.py",
+      "source_sha256": "b8c82c5e7b8715682206cf03ad861bd3574e7162f192a6e682cf89ba41b6269c"
+    },
+    "scripts/evaluate_random_forest.py": {
+      "source_role": "runtime",
+      "source_path": "vue-server-v1/fisheries-server/scripts/evaluate_random_forest.py",
+      "source_sha256": "0583b669e82c49ad027ca6eec44e1fe69a1ca4fb7d0286b5ca1ab698d6ac1b49"
+    },
+    "scripts/fetch_effort.py": {
+      "source_role": "data-pipeline",
+      "source_path": "deploy/fisheries-east-asia-surface-new/fisheries-server/scripts/fetch_effort.py",
+      "source_sha256": "73ae486367a6172e4bc3311a63153030e9f104215713d9fe610c658a52f6b6f9"
+    },
+    "scripts/fetch_environment.py": {
+      "source_role": "runtime",
+      "source_path": "vue-server-v1/fisheries-server/scripts/fetch_environment.py",
+      "source_sha256": "70875822ed63a24fa3caa1a25eca8617bf12653b4ebf009d8c0d230f12978217"
+    },
+    "scripts/package_server.py": {
+      "source_role": "runtime",
+      "source_path": "vue-server-v1/fisheries-server/scripts/package_server.py",
+      "source_sha256": "6297f0f7cb9621c44abade1c842b9dba387cd854a8465388887dfe62a1c2e0d0"
+    },
+    "scripts/runtime.py": {
+      "source_role": "runtime",
+      "source_path": "vue-server-v1/fisheries-server/scripts/runtime.py",
+      "source_sha256": "996957c24498abb05e08f151c16c6a1993a9b32bbff981c1367fef98c9e70356"
+    },
+    "scripts/serve.py": {
+      "source_role": "runtime",
+      "source_path": "vue-server-v1/fisheries-server/scripts/serve.py",
+      "source_sha256": "2fd268c6ca874ad65c78accbf0f48d38b2b455be2d2baca7a6ca05284a271bfc"
+    },
+    "scripts/server_probe.sh": {
+      "source_role": "runtime",
+      "source_path": "vue-server-v1/fisheries-server/scripts/server_probe.sh",
+      "source_sha256": "98348744ec2bdd13f0cfb4503913a5589b88d9c4afe4c77193d643b1896760ea"
+    },
+    "scripts/train_random_forest.py": {
+      "source_role": "runtime",
+      "source_path": "vue-server-v1/fisheries-server/scripts/train_random_forest.py",
+      "source_sha256": "71f652e4029a9cd7934edc18e5e78b2e629ef63dcd2e25732648adbb1092f63b"
+    },
+    "backend/app/main.py": {
+      "source_role": "runtime",
+      "source_path": "vue-server-v1/fisheries-server/backend/app/main.py",
+      "source_sha256": "e1437769eafb69fd97a86111865fcb3111863f6fc8f0625e776612f45d9dce5f"
+    },
+    "backend/app/prediction.py": {
+      "source_role": "runtime",
+      "source_path": "vue-server-v1/fisheries-server/backend/app/prediction.py",
+      "source_sha256": "7e3d6e1d1f35897481df623d2e481c250084301c6f2e875447a61ab22a1edbbc"
+    },
+    "backend/app/store.py": {
+      "source_role": "data-pipeline",
+      "source_path": "deploy/fisheries-east-asia-surface-new/fisheries-server/backend/app/store.py",
+      "source_sha256": "ed5d45e2876dcb00988469d00f5028f263fca1c37068565e840f1a5161fcfbdd"
+    },
+    "backend/app/temperature.py": {
+      "source_role": "data-pipeline",
+      "source_path": "deploy/fisheries-east-asia-surface-new/fisheries-server/backend/app/temperature.py",
+      "source_sha256": "314de8db3f1adbd5a7d91bfdbbb2b433ba1ed20afca2e3fb565c75f9bcf7cb94"
+    },
+    "backend/app/__init__.py": {
+      "source_role": "runtime",
+      "source_path": "vue-server-v1/fisheries-server/backend/app/__init__.py",
+      "source_sha256": "f5be5b4f5471211f691ff960d9903002423a0ee59252b114bcbae1529403500a"
+    },
+    "deploy/linux/requirements-runtime.txt": {
+      "source_role": "runtime",
+      "source_path": "vue-server-v1/fisheries-server/deploy/linux/requirements-runtime.txt",
+      "source_sha256": "09afe4d2eed64054d494a3a7eec70f78d28e3278da43049c37374d0f77fea8c5"
+    },
+    "deploy/linux/start.sh": {
+      "source_role": "runtime",
+      "source_path": "vue-server-v1/fisheries-server/deploy/linux/start.sh",
+      "source_sha256": "1fad57ee28e75dc16f6eb46acf28e5854a4c4ad68ecac5393a479297b9ef341b"
+    },
+    "docs/legacy/analysis/random-forest.md": {
+      "source_role": "runtime",
+      "source_path": "vue-server-v1/fisheries-server/docs/analysis/random-forest.md",
+      "source_sha256": "6cf98b74fd40bbc3db890b63d861d574f6f640a106fddc063042195d79b523d4"
+    },
+    "frontend/src/commands.ts": {
+      "source_role": "runtime",
+      "source_path": "vue-server-v1/fisheries-server/frontend/src/commands.ts",
+      "source_sha256": "f44ff20e1ac9f1c278a8572db948da416962893f2259c5fe8584d3362cf89969"
+    },
+    "frontend/src/raster.ts": {
+      "source_role": "runtime",
+      "source_path": "vue-server-v1/fisheries-server/frontend/src/raster.ts",
+      "source_sha256": "7b373849b6769b141a5df4eec859dd297480f685943688e07736d4df6187a048"
+    },
+    "frontend/src/spatial.ts": {
+      "source_role": "runtime",
+      "source_path": "vue-server-v1/fisheries-server/frontend/src/spatial.ts",
+      "source_sha256": "784278ad81dda7a665950ff7f12e64a90542e050e29bf9c69d5a871b249636bb"
+    },
+    "frontend/src/style.css": {
+      "source_role": "runtime",
+      "source_path": "vue-server-v1/fisheries-server/frontend/src/style.css",
+      "source_sha256": "6f096a7f60d04d1a1ccabc00a4b10e6c510c72b13020631b53ad44f6053b3083"
+    },
+    "scripts/build_regional_dataset.py": {
+      "source_role": "data-pipeline",
+      "source_path": "deploy/fisheries-east-asia-surface-new/fisheries-server/scripts/build_regional_dataset.py",
+      "source_sha256": "dbe70926c4d10c1cf74e6b08aab3e8df4395023bfd5f8c0432676ccd789c4a27"
+    },
+    "scripts/validate_regional_dataset.py": {
+      "source_role": "data-pipeline",
+      "source_path": "deploy/fisheries-east-asia-surface-new/fisheries-server/scripts/validate_regional_dataset.py",
+      "source_sha256": "247ac8f2893d2c2b03b8d7094347de7a88a4d6f60938930e9e78e230893bba2e"
+    },
+    "scripts/validate_surface_release.py": {
+      "source_role": "data-pipeline",
+      "source_path": "deploy/fisheries-east-asia-surface-new/fisheries-server/scripts/validate_surface_release.py",
+      "source_sha256": "6719601e7cd1da1bc33a8742830a961b4445f5195812da578fa40c9124158610"
+    },
+    "config/east_asia_2012_2024.json": {
+      "source_role": "data-pipeline",
+      "source_path": "deploy/fisheries-east-asia-surface-new/fisheries-server/config/east_asia_2012_2024.json",
+      "source_sha256": "9f4710a0ea79f61a1b45252ba3ed5916aeeeccb5b5f2ff7cf1b28d6a093f0630"
+    },
+    "config/east_asia_2012_pilot.json": {
+      "source_role": "data-pipeline",
+      "source_path": "deploy/fisheries-east-asia-surface-new/fisheries-server/config/east_asia_2012_pilot.json",
+      "source_sha256": "a22b0c99fbdf9303c6db6fe72d2a0737b05222750a7fcf08046478e68b1aa974"
+    },
+    "deploy/linux/acs_surface.sh": {
+      "source_role": "data-pipeline",
+      "source_path": "deploy/fisheries-east-asia-surface-new/fisheries-server/deploy/linux/acs_surface.sh",
+      "source_sha256": "7996fa4d2cff0a951ae07a30068181207f066e830368f669465bfa827c616863"
+    },
+    "deploy/linux/expand_east_asia.sh": {
+      "source_role": "data-pipeline",
+      "source_path": "deploy/fisheries-east-asia-surface-new/fisheries-server/deploy/linux/expand_east_asia.sh",
+      "source_sha256": "2cb63140b0e6b991cde96cf1bf250d6fe91f333d8edd741f5d4f7b73f2764b15"
+    },
+    "ops/sync_release.py": {
+      "source_role": "runtime-supervisor",
+      "source_path": "vue-server-v1/sync_release.py",
+      "source_sha256": "7e8cf95bebd87d13fbd6b00ed917bf255ed8e3385572da74df52a483d6b16683"
+    },
+    "models/features.py": {
+      "source_role": "runtime",
+      "source_path": "vue-server-v1/fisheries-server/models/features.py",
+      "source_sha256": "07c8506dfb438dc97a7eedc491a85e099bdabacecb14bb73d88dec84dcbce88d"
+    },
+    "models/random_forest.py": {
+      "source_role": "runtime",
+      "source_path": "vue-server-v1/fisheries-server/models/random_forest.py",
+      "source_sha256": "faf6f04c78ee56a6013a74f0feb0f212ff1faaef821c6ee5dd3b62f7d00f7367"
+    },
+    "models/__init__.py": {
+      "source_role": "runtime",
+      "source_path": "vue-server-v1/fisheries-server/models/__init__.py",
+      "source_sha256": "424c7b9ad6c2681aa3a8b5bc416dfc8fab62d32ae003f68ba05f861d1f22292f"
+    },
+    "frontend/public/land.geojson": {
+      "source_role": "runtime",
+      "source_path": "vue-server-v1/fisheries-server/frontend/public/land.geojson",
+      "source_sha256": "9e0729ee253ca7d7a5c4ae9395fb1902264c5377c52e224d13dd85010e2835d9"
+    },
+    "frontend/src/main.tsx": {
+      "source_role": "data-pipeline-dynamic-map",
+      "source_path": "deploy/fisheries-east-asia-surface-new/fisheries-server/frontend/src/main.tsx",
+      "source_sha256": "9e6fd552870ca8ce1849486e28f969347b39c6ca1b9db158bec0a2656c6bec5d"
+    },
+    "deploy/slurm/build_surface.sbatch": {
+      "source_role": "adapted-slurm-template",
+      "source_path": "deploy/fisheries-east-asia-surface-new/fisheries-server/acs_surface_slurm.sbatch",
+      "source_sha256": "602ab89095508c3966ca7ea2d3b3d3b97d053c80381e2ee932beeb32aa796048"
+    }
+  },
+  "supplement_sha256": "b4c9e943b41a127469f200168756df4d9cc0b44739b05ef1a7549fffc3951138"
+}

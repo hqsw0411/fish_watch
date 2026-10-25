@@ -1,0 +1,6 @@
+-r model.txt
+xarray==2026.9.0
+h5netcdf==1.8.1
+h5py==3.16.0
+httpx==0.28.1
+pytest>=8,<10

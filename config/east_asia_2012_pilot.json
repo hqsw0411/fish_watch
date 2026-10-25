@@ -1,0 +1,92 @@
+{
+  "id": "east_asia_2012_pilot",
+  "name": "东亚近海 2012 年测试",
+  "bbox": [
+    115.0,
+    20.0,
+    135.0,
+    40.0
+  ],
+  "start_month": "2012-01",
+  "end_month": "2012-12",
+  "grid_degrees": 0.1,
+  "crs": "EPSG:4326",
+  "gfw_record": "14982712",
+  "gfw_metadata": "data/metadata/east_asia/zenodo_14982712.record.json",
+  "gfw_archive_pattern": "data/source/fleet-monthly-csvs-10-v3-{year}.zip",
+  "output_dir": "data/samples/east_asia_2012_pilot",
+  "initial_bbox": [
+    115.0,
+    20.0,
+    135.0,
+    40.0
+  ],
+  "overview_bbox": [
+    113.0,
+    18.0,
+    137.0,
+    42.0
+  ],
+  "max_region_cells": 40000,
+  "environment_sources": [
+    {
+      "id": "physics",
+      "dataset_id": "cmems_mod_glo_phy_my_0.083deg_P1M-m",
+      "variables": {
+        "thetao": "sst_c",
+        "zos": "ssh_m"
+      },
+      "path": "data/raw/east_asia/{year}/physics.nc"
+    },
+    {
+      "id": "bgc",
+      "dataset_id": "cmems_mod_glo_bgc_my_0.25deg_P1M-m",
+      "variables": {
+        "chl": "chl_mg_m3",
+        "nppv": "npp_mg_c_m3_day"
+      },
+      "path": "data/raw/east_asia/{year}/bgc.nc"
+    },
+    {
+      "id": "altimetry",
+      "dataset_id": "cmems_obs-sl_glo_phy-ssh_my_allsat-l4-duacs-0.125deg_P1M-m",
+      "variables": {
+        "sla": "ssha_m"
+      },
+      "path": "data/raw/east_asia/{year}/ssha.nc"
+    }
+  ],
+  "fronts_file": null,
+  "regions": [
+    {
+      "id": "yellow_sea",
+      "name": "黄海及邻近海域",
+      "bbox": [
+        119.0,
+        32.0,
+        127.0,
+        40.0
+      ]
+    },
+    {
+      "id": "east_china_sea",
+      "name": "东海及邻近海域",
+      "bbox": [
+        120.0,
+        25.0,
+        130.0,
+        33.0
+      ]
+    },
+    {
+      "id": "taiwan",
+      "name": "台湾周边海域",
+      "bbox": [
+        117.0,
+        20.0,
+        125.0,
+        27.0
+      ]
+    }
+  ]
+}
